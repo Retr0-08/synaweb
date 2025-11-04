@@ -1,0 +1,8 @@
+body { margin:0; font-family:Arial, sans-serif; background:#08060b; color:#fff; }
+.topbar { background: linear-gradient(90deg,#ff4db8,#800020); padding:10px; text-align:center; }
+.logo { font-size:2em; font-weight:bold; }
+.main { padding:10px; }
+#messages { height:60vh; overflow-y:auto; margin-bottom:10px; }
+.composer { display:flex; }
+#inputText { flex:1; padding:10px; border:none; border-radius:5px 0 0 5px; }
+#sendBtn { padding:10px; border:none; background:#ff4db8; color:#fff; border-radius:0 5px 5px 0; cursor:pointer; }
