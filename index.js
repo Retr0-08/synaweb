@@ -32,10 +32,11 @@ app.post('/api/chat', async (req, res) => {
     });
 
     const data = await response.json();
-    const reply = data.choices[0].message.content || '...';
+    const reply = data.choices[0]?.message?.content || '...';
     res.json({ reply });
   } catch(e){
-    res.status(500).json({ error: e.message });
+    console.error(e);
+    res.status(500).json({ error: 'Erro ao conectar à OpenAI' });
   }
 });
 
